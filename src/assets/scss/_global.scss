@@ -1,0 +1,104 @@
+@import 'theming';
+@import 'functions';
+@import 'mixins';
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    transition: $base_transition;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    height: 100%;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: $title-font;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    margin: 0;
+    color: get-color($base-text);
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 200;
+    font-family: $title-font;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+    font-family: $title-font;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.image-responsive {
+    box-sizing: border-box;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.mat-form-field-infix {
+    padding-top: 0.8em !important;
+    width: 100% !important;
+}
+
+.mat-form-field-prefix {
+    margin-right: 20px !important;
+}
+
+.mat-mini-fab mgx-icon {
+    font-size: 24px !important;
+}
+
+button[disabled] {
+    cursor: not-allowed !important;
+}
+
+// check fixes
+.cdk-overlay-pane.mat-datetimepicker-popup {
+    @include flex(column, center, center);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: get-color('dark', 0.5);
+}

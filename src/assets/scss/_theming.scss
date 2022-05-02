@@ -1,0 +1,95 @@
+@import '~@angular/material/theming';
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Roboto');
+$base-text: 'dark';
+$base-transition: 0.35s ease-in;
+$base-radius: 6px;
+$title-font: 'Roboto',
+sans-serif;
+$content-font: 'Lato',
+sans-serif;
+$colors: ( 
+primary: #039BE5,
+accent: #af60e0,
+info: #666500,
+warning: #e0cd88,
+danger: #e0334c,
+success: #60a08f,
+gray: #727085,
+light: #eae5f5,
+dark: #242330,
+
+//colores Estados 
+stateINICIADO: black,
+stateSOLICITADO: #2DD14E,
+stateAPROBADO: #039BE5,
+stateRECHAZADO: #FD8238,
+stateCONTRATADO:#A467CC,
+stateLIQUIDADO: #D43538,
+stateANULADO: #AFB135,
+
+
+// Colores Plaza
+bluePlaza: #039BE5,
+bluePlaza-light: #5BB6E4,
+bluePlaza-dark: #309ACF,
+
+greendPlaza: #6ACA25,
+grayPlaza: #E2E2E2,
+orangePlaza: #FF7F0B,
+
+// Colores produccion login
+header-light: #fe8c00,
+header-dark: #e45832,
+
+// colores admin header pro
+header-light-blue: #03A9F4,
+header-dark-blue: #2e95c5,
+
+// colores pruebas 
+color-pruebas-light: #fe8c00,
+color-pruebas-dark: #e45832,
+
+
+header-menu: #FA1825,
+icon-menu: #404F70,
+heard-dialog-dark: #404F70,
+heard-dialog-light: rgb(84, 101, 139),
+);
+$contrasts: ( 
+primary: #eae5f5,
+accent: #eae5f5,
+info: #eae5f5,
+warning: #eae5f5,
+danger: #eae5f5,
+success: #eae5f5,
+gray: #eae5f5,
+light: #242330,
+dark: #eae5f5,
+stateINICIADO:#eae5f5,
+stateSOLICITADO: #eae5f5,
+stateAPROBADO: #eae5f5,
+stateRECHAZADO: #eae5f5,
+stateCONTRATADO:#eae5f5,
+stateLIQUIDADO: #eae5f5,
+stateANULADO: #eae5f5,
+bluePlaza: #eae5f5,
+bluePlaza-light: #eae5f5,
+bluePlaza-dark: #eae5f5,
+greendPlaza: #eae5f5,
+grayPlaza: #eae5f5,
+orangePlaza: #eae5f5,
+color-pruebas-light: #eae5f5,
+color-pruebas-dark: #eae5f5,
+header-light: #eae5f5,
+header-dark: #eae5f5,
+header-light-blue: #eae5f5,
+header-dark-blue: #eae5f5,
+header-menu: #eae5f5,
+icon-menu: #eae5f5,
+heard-dialog-dark: #eae5f5,
+heard-dialog-light: #eae5f5);
+$sizes: ( xs: 360px,
+sm: 480px,
+md: 768px,
+lg: 1024px,
+xl: 1440px);
