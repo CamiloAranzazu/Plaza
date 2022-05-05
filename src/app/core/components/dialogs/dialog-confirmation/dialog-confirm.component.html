@@ -1,0 +1,15 @@
+<div class="content-dialog">
+  <h3>{{data?.message || 'Sin data'}}</h3>
+  <h3 *ngIf="data?.question">{{data?.question || 'Sin data'}}</h3>
+
+  <div class="actions-dialog">
+    <button   *ngIf="btnCancel === true"
+              mat-button class="btn-cancelar" 
+              [mat-dialog-close]="data" 
+              (click)="onNoClick()">{{data?.textBtnCancel || 'CANCELAR'}}</button>&nbsp;&nbsp;
+    <button   *ngIf="btnConfirm === true"
+              mat-button class="btn-generar" 
+              [mat-dialog-close]="data" 
+              (click)="data.confirm = true">{{data?.textBtnConfirm || 'CONFIRMAR'}}</button>
+  </div>
+</div>

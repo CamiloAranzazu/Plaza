@@ -7,12 +7,10 @@ import { CoreModule } from './core/core.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { TokenreceiverComponent } from './tokenreceiver/tokenreceiver.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TokenreceiverComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

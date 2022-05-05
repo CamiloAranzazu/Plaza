@@ -38,6 +38,7 @@
         "file-saver": "^2.0.5",
         "firebase": "^7.13.1",
         "font-awesome": "^4.7.0",
+        "fs": "0.0.1-security",
         "jwt-decode": "^3.0.0",
         "leaflet": "^1.7.1",
         "leaflet-mouse-position": "^1.2.0",

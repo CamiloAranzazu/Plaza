@@ -1,0 +1,21 @@
+
+<div class="header">
+    
+    <div class="menu">Menu</div>
+    <input type="button" class="btn-atras" value="Cerrar sesión" (click)="clearSesion()">
+</div>
+<div class="list">
+    <div class="card" *ngFor="let item of menu" (click)="go(item.url)">
+        <img [src]="item.img" alt="" width="60" height="60">
+        <div>
+            <div class="title">
+                <div>{{item.nombre}}</div>
+                <div class="entrada" *ngIf="item?.entrada === true">Entrada</div>
+                <div class="salida" *ngIf="item?.entrada === false">Salida</div>
+            </div>
+            <div class="description">{{item.description}}</div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,22 @@
+<div class="header">
+    <input *ngIf="flagEdit === false" type="button" class="btn-atras" value="MENU" (click)="atras()">
+    <div class="menu">Inventario</div>
+    <mat-icon class="icon-save">save</mat-icon>
+</div>
+<div class="salida-header">Entrada</div>
+<div class="list">
+    <div class="card" *ngFor="let item of products; let index = index">
+        <div (click)="editar(item)">
+            <div class="title">{{item.name}}</div>
+            <div class="description">Cantidad: {{item.cantidad}}</div>
+        </div>
+        <mat-form-field class="select-component" appearance="outline">
+            <mat-select>
+              <mat-option *ngFor="let item of valuesSelectedCantidad" [value]="item.value">{{item.value}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+</div>
+<br>
+
+

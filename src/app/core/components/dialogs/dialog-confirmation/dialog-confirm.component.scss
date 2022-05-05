@@ -1,0 +1,52 @@
+:host {
+    .content-dialog {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .input-field {
+        width: 200px;
+    }
+    h3 {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 100%;
+        flex: 1 1 100%;
+        font-size: 1.08571rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .actions-dialog {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .btn-generar {
+        width: 130px;
+        background: #38d39f;
+        color: #fff;
+    }
+    .btn-cancelar {
+        width: 130px;
+    }
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+        background-color: #FFFFFF !important;
+    }
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+        background-color:#FFFFFF !important;
+    }
+    .check-dialog {
+        margin-top: 10px;
+    }
+    
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+    .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+    .mat-accent .mat-pseudo-checkbox-checked,
+    .mat-accent .mat-pseudo-checkbox-indeterminate,
+    .mat-pseudo-checkbox-checked,
+    .mat-pseudo-checkbox-indeterminate {
+        background-color: #38d39f !important;
+        /* Red background for example */
+    }

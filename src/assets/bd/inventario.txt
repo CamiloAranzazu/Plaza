@@ -1,0 +1,1 @@
+{"Date":"2022-05-04T03:12:42.100Z","Inventario":[{"name":"CHUZOS DE CERDO","medida":0,"cantidadFinal":0,"cantidadDeEntrada":0,"sumatoriaCantidadEntrada":0},{"name":"HAMBUERGUESA TRADICIONAL","medida":0,"cantidadFinal":0,"cantidadDeEntrada":0,"sumatoriaCantidadEntrada":0},{"name":"FILETE DE POLLO","medida":0,"cantidadFinal":0,"cantidadDeEntrada":0,"sumatoriaCantidadEntrada":0}]}

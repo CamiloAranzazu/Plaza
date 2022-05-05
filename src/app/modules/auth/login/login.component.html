@@ -1,1 +1,17 @@
-LOGIN
+<div class="container">
+	<div class="login-content">
+		<form [formGroup]="form" autocomplete="off">
+      <h2 class="title">Bienvenido</h2>
+      <div class="input-div one">
+        <div class="i">
+          <!-- <i class="fas fa-user"></i> -->
+        </div>
+        <div class="div">
+          <input type="password" formControlName="value" class="input" placeholder="Usuario">
+        </div>
+      </div>
+      <!-- <a href="#">Has olvidado la Contraseña?</a> -->
+      <input type="button" class="btn" value="Entrar" (click)="go()">
+    </form>
+  </div>
+</div>

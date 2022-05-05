@@ -1,0 +1,38 @@
+<div class="header">
+    <input *ngIf="flagEdit === false" type="button" class="btn-atras" value="MENU" (click)="atras()">
+    <div class="menu">Productos</div>
+    <input *ngIf="flagEdit === false" type="button" class="btn" value="+" (click)="flagEdit = true; this.form.reset();">
+</div>
+<div class="list" *ngIf="flagEdit === false">
+    <div class="card" *ngFor="let item of products; let index = index">
+        <div (click)="editar(item)">
+            <div class="title">{{item.name}}</div>
+            <div class="description">Medida: {{getMedidaProducto(item.medida)}}</div>
+        </div>
+        <mat-icon class="icon-delete" (click)="delete(index)">delete</mat-icon>
+    </div>
+</div>
+<br>
+<form [formGroup]="form" *ngIf="flagEdit === true">
+    <mat-form-field class="input-field" appearance="outline">
+        <label><strong>NOMBRE</strong></label>
+        <input matInput type="text" formControlName="name" placeholder="Nombre">
+        <mat-error>Requerido</mat-error>
+    </mat-form-field>
+    <mat-form-field class="input-field" appearance="outline">
+        <label><strong>MEDIDA</strong></label>
+        <mat-select formControlName="medida" placeholder="Seleccione">
+            <mat-option value=0>Unidad</mat-option>
+            <mat-option value=1>Paquete</mat-option>
+            <mat-option value=2>Paca</mat-option>
+          </mat-select>
+        <mat-error>Requerido</mat-error>
+    </mat-form-field>
+    <br><br><br>
+    <div class="btn-actions"style="margin: 3px;">
+        <button mat-button class="btn-cancelar" type="button" (click)="close()">{{'CANCELAR'}}</button>&nbsp;&nbsp;
+        <button mat-button class="btn-generar" type="button" (click)="save()">{{'GUARDAR'}}</button>
+    </div>
+</form>
+
+

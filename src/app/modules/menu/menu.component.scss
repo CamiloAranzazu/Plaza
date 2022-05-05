@@ -1,0 +1,86 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    align-items: center;
+    overflow-y: scroll;
+    height: 100vh;
+    overflow: auto;
+}
+.menu {
+    font-size: 60px;
+    margin: 10px;
+    font-family: "Outfit";
+}
+.card {
+    display: flex;
+    justify-content: flex-start;
+    width: 330px;
+    padding: 16px;
+    margin: 4px;
+    border-radius: 14px;
+    border: 1px solid rgb(199, 199, 199);
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 10%);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: "Outfit"; 
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgb(0 0 0 / 10%);
+    }
+    img {
+        margin-right: 10px;
+    }
+    .title {
+        font-weight: 600;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .entrada {
+            color: white;
+            background-color: #32be8f;
+            padding: 8px;
+            border-radius: 10px;
+        }
+        .salida {
+            color: white;
+            background-color: red;
+            padding: 8px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+	background: #333;
+	color: white;
+	height: 80px;
+    font-weight: 600;
+    font-family: "Outfit"; 
+}
+
+.btn-atras{
+    display: block;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 200%;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Outfit"; 
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+    &:hover{
+        background-position: right;
+    }
+}

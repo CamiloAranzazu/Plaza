@@ -1,0 +1,25 @@
+<div class="header">
+    <input *ngIf="flagEdit === false" type="button" class="btn-atras" value="MENU" (click)="atras()">
+    <div class="menu">Inventario</div>
+    <mat-icon class="icon-save" (click)="save()">save</mat-icon>
+</div>
+<div class="entrada-header">Entrada</div>
+<div class="list">
+    <form [formGroup]="form">
+        <div class="card" *ngFor="let prod of products; let index = index">
+            <div class="title">{{prod.name}}</div>
+            <div class="data">
+                <div class="description">Cantidad: {{prod.cantidadFinal}}</div>
+                <mat-form-field class="select-component" appearance="outline">
+                    <mat-select formControlName="cantidadDeEntrada" (selectionChange)="changeValue($event.value, prod)">
+                        <mat-option *ngFor="let item of valuesSelectedCantidad" [value]="item">{{item}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div class="description">Total: {{prod.sumatoriaCantidadEntrada}}</div>
+            </div>
+        </div>
+    </form>
+</div>
+<br>
+
+

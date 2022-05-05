@@ -4,10 +4,12 @@ import { JobsViewComponent } from './components/jobs-view/jobs-view.component';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CurrencyPipe } from '@angular/common';
+import { DialogConfirmComponent } from './components/dialogs/dialog-confirmation/dialog-confirm.component';
 
 @NgModule({
   declarations: [
-    JobsViewComponent
+    JobsViewComponent,
+    DialogConfirmComponent
   ],
   imports: [
     CommonModule,
@@ -18,6 +20,7 @@ import { CurrencyPipe } from '@angular/common';
   ],
   exports: [
     JobsViewComponent,
+    DialogConfirmComponent
   ],
   providers: [CurrencyPipe]
 })
