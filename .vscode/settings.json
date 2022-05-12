@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/d344ad97-a65f-450c-bb21-1c0aadb353eb/resourceGroups/AzurePlaza/providers/Microsoft.Web/sites/plazaBurguer",
+    "appService.deploySubpath": "dist\\plaza"
+}
